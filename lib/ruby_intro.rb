@@ -68,7 +68,7 @@ end
 def binary_multiple_of_4? s
   # YOUR CODE HERE
   s.delete!(" ")
-  /^[01]+$/ === s ? s.to_i%4 == 0 : false  
+  /^[01]+$/ === s ? s.to_i(2)%4 == 0 : false  
 end
 
 
