@@ -4,11 +4,7 @@
 
 def sum arr
   # YOUR CODE HERE
-  s = 0
-  if arr.length > 0
-    arr.each { |item| s += item}
-  end
-  return s
+  arr.sum
 end
 
 def max_2_sum arr
