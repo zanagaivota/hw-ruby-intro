@@ -62,13 +62,14 @@ def hello(name)
 end
 
 def starts_with_consonant? s
+  # YOUR CODE HERE
   /\A[a-z&&[^aeoiu]].*/i === s
 end
 
 def binary_multiple_of_4? s
   # YOUR CODE HERE
-  s.delete!(" ")
-  /^[01]+$/ === s ? s.to_i(2)%4 == 0 : false  
+  s = s.delete(' ')
+  /^[01]+$/ === s ? s.to_i%4 == 0 : false  
 end
 
 
